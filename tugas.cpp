@@ -44,5 +44,30 @@ public:
 
 class BelahKetupat
 {
-    
+private:
+        double d1, d2; 
+        double sisi;
+
+
+public:
+    void inputData()
+    {
+        cout << "=== Input Belah Ketupat ===" << endl;
+            cout << "Masukkan diagonal 1 (d1): ";
+            cin >> d1;
+            cout << "Masukkan diagonal 2 (d2): ";
+            cin >> d2;
+            cout << "Masukkan sisi          : ";
+            cin >> sisi;
+    }
+
+    double hitungLuas()
+    {
+        return 0.5 * d1 * d2;
+    }
+
+    double hitungKeliling()
+        {
+            return 4 * sisi;
+        }
 };
